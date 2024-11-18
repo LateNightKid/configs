@@ -13,6 +13,11 @@ alias tma="tmux attach -t"
 alias tl="tmux ls"
 alias tk="tmux kill-session -t"
 
+alias gs="git status"
+alias ga="git add"
+alias gap="git add -p"
+alias gcm="git commit -m"
+
 alias cdd="cd ~/Downloads"
 
 alias f="fzf"
