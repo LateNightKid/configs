@@ -17,7 +17,8 @@ alias cdd="cd ~/Downloads"
 
 alias f="fzf"
 
-alias n="nvim"
+alias n="nvim ."
+alias nv="nvim"
 
 alias activate=". ./setenv.sh"
 
