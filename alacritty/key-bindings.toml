@@ -1,0 +1,7 @@
+[keyboard]
+bindings = [
+    {key = "V", mods = "Control", action = "Paste"}
+]
+
+[selection]
+save_to_clipboard = true

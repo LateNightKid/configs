@@ -1,0 +1,7 @@
+general.import = [
+"fonts.toml",
+"window.toml",
+"colors.toml",
+"terminal.toml",
+"key-bindings.toml",
+]
