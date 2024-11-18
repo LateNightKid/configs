@@ -23,8 +23,6 @@ alias activate=". ./setenv.sh"
 
 bindkey -v
 
-# for file in ~/.config/my-configs/local/*; do
-#     source $file;
-#     # echo "Sourced file: $file"
-# done
-# echo "Done!"
+for file in ~/.config/my-configs/local/*; do
+    source $file;
+done
