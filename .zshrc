@@ -17,7 +17,10 @@ alias gs="git status"
 alias ga="git add"
 alias gap="git add -p"
 alias gcm="git commit -m"
+alias gd="git diff"
+alias gcb="git checkout -b"
 
+alias p3="python3"
 alias cdd="cd ~/Downloads"
 
 alias f="fzf"
