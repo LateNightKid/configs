@@ -31,6 +31,7 @@ alias nv="nvim"
 alias activate=". ./setenv.sh"
 
 bindkey -v
+bindkey '^R' history-incremental-search-backward
 
 for file in ~/.config/my-configs/local/*; do
     source $file;
