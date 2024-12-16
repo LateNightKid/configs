@@ -37,3 +37,8 @@ source <(fzf --zsh)
 for file in ~/.config/my-configs/local/*; do
     source $file;
 done
+
+if [[ $TMUX == "" ]]
+then
+    tmux
+fi
