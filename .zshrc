@@ -42,6 +42,11 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 if [[ $TMUX == "" ]]
 then 
-    TERM=xterm-256color
-    tmux
+    if [[ $(tmux ls | grep windows) == "" ]]
+    then  
+        TERM=xterm-256color
+        tmux
+    else
+        tmux attach
+    fi
 fi
