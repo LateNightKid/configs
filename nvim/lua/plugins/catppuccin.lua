@@ -29,7 +29,7 @@ return {
                 surface2 = "#666666",
                 surface1 = "#555555",
                 surface0 = "#444444",
-                base = "#191919",
+                base = "#151515",
                 mantle = "#222222",
                 crust = "#333333",
             }
