@@ -38,7 +38,10 @@ for file in ~/.config/my-configs/local/*; do
     source $file;
 done
 
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
 if [[ $TMUX == "" ]]
-then
+then 
+    TERM=xterm-256color
     tmux
 fi
