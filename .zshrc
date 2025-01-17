@@ -18,6 +18,7 @@ alias ga="git add"
 alias gap="git add -p"
 alias gcm="git commit -m"
 alias gd="git diff"
+alias gc="git checkout "
 alias gcb="git checkout -b"
 
 alias p3="python3"
@@ -40,13 +41,13 @@ done
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-if [[ $TMUX == "" ]]
-then 
-    if [[ $(tmux ls | grep windows) == "" ]]
-    then  
-        TERM=xterm-256color
-        tmux
-    else
-        tmux attach
-    fi
-fi
+# if [[ $TMUX == "" ]]
+# then 
+#     if [[ $(tmux ls | grep windows) == "" ]]
+#     then  
+#         TERM=xterm-256color
+#         tmux
+#     else
+#         tmux attach
+#     fi
+# fi
