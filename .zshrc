@@ -5,6 +5,7 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
+alias l="tree -L 1 --dirsfirst --sort name"
 alias tmux="TERM=xterm-256color tmux"
 alias t="TERM=xterm-256color tmux"
 alias tm="TERM=xterm-256color tmux new -s"
@@ -29,7 +30,7 @@ alias f="fzf"
 alias n="nvim ."
 alias nv="nvim"
 
-alias activate=". ./setenv.sh"
+alias dev=". ./setenv.sh"
 
 bindkey -v
 bindkey '^R' history-incremental-search-backward
