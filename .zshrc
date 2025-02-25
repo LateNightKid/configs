@@ -5,8 +5,8 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
-alias syncconfig="$HOME/.config/my-configs/sync.sh"
-alias updateconfig="$HOME/.config/my-configs/update.sh"
+alias pushconfig="$HOME/.config/my-configs/sync.sh"
+alias pullconfig="$HOME/.config/my-configs/update.sh && source \"$HOME/.zshrc\""
 
 alias l="tree -L 1 --dirsfirst --sort name"
 alias tmux="TERM=xterm-256color tmux"
