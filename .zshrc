@@ -5,6 +5,9 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
+alias syncconfig="$HOME/.config/my-configs/sync.sh"
+alias updateconfig="$HOME/.config/my-configs/update.sh"
+
 alias l="tree -L 1 --dirsfirst --sort name"
 alias tmux="TERM=xterm-256color tmux"
 alias t="TERM=xterm-256color tmux"
@@ -41,14 +44,3 @@ for file in ~/.config/my-configs/local/*; do
 done
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
-# if [[ $TMUX == "" ]]
-# then 
-#     if [[ $(tmux ls | grep windows) == "" ]]
-#     then  
-#         TERM=xterm-256color
-#         tmux
-#     else
-#         tmux attach
-#     fi
-# fi
