@@ -37,7 +37,6 @@ alias dev=". ./setenv.sh"
 
 bindkey -v
 bindkey '^R' history-incremental-search-backward
-source <(fzf --zsh)
 
 for file in ~/.config/my-configs/local/*; do
     source $file;
