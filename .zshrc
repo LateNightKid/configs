@@ -5,10 +5,11 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
-alias pushconfig="$HOME/.config/my-configs/sync.sh"
-alias pullconfig="$HOME/.config/my-configs/update.sh && source \"$HOME/.zshrc\""
+alias pushconfig="$HOME/.config/my-configs/push.sh"
+alias pullconfig="$HOME/.config/my-configs/pull.sh && source \"$HOME/.zshrc\""
 
 alias l="tree -L 1 --dirsfirst --sort name"
+
 alias tmux="TERM=xterm-256color tmux"
 alias t="TERM=xterm-256color tmux"
 alias tm="TERM=xterm-256color tmux new -s"
@@ -32,6 +33,7 @@ alias f="fzf"
 
 alias n="nvim ."
 alias nv="nvim"
+alias nvzsh="nvim \$(realpath \"$HOME/.zshrc\")"
 
 alias dev=". ./setenv.sh"
 
