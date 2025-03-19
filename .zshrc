@@ -40,8 +40,6 @@ alias dev=". ./setenv.sh"
 bindkey -v
 bindkey '^R' history-incremental-search-backward
 
-for file in ~/.config/my-configs/local/*; do
-    source $file;
-done
-
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+if test -f zsh_override.sh; then
+    source zsh_override.sh
+fi
