@@ -1,12 +1,13 @@
+export SYNCED_DIR="$(dirname $(realpath $HOME/.zshrc))"
 export ZSH="$HOME/.oh-my-zsh"
 export MANPAGER="nvim +Man!"
 
-ZSH_THEME="$(cat zsh_theme)"
+ZSH_THEME="$(cat ${SYNCED_DIR}/zsh_theme)"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
-alias pushconfig="$HOME/.config/my-configs/push.sh"
-alias pullconfig="$HOME/.config/my-configs/pull.sh && source \"$HOME/.zshrc\""
+alias pushconfig="${SYNCED_DIR}/push.sh"
+alias pullconfig="${SYNCED_DIR}/pull.sh && source \"$HOME/.zshrc\""
 
 alias l="tree -L 1 --dirsfirst --sort name"
 
@@ -33,7 +34,7 @@ alias f="fzf"
 
 alias n="nvim ."
 alias nv="nvim"
-alias nvzsh="nvim \$(realpath \"$HOME/.zshrc\")"
+alias nvzsh="nvim \$(realpath \"${SYNCED_DIR}/.zshrc\")"
 
 alias dev=". ./setenv.sh"
 
