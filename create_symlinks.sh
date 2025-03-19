@@ -39,14 +39,3 @@ if [ -d "$CONFIG_DIR/nvim" ]; then
     echo "Moved with an .old suffix."
 fi
 ln -s "$SYNCED_DIR/nvim" "$CONFIG_DIR/nvim"
-
-
-#ALACRITTY
-if [ -d "$CONFIG_DIR/alacritty" ]; then
-    echo "An old nvim config directory was found."
-    mv "$CONFIG_DIR/alacritty" "$CONFIG_DIR/alacritty.old"
-    echo "Moved with an .old suffix."
-fi
-ln -s "$SYNCED_DIR/alacritty" "$CONFIG_DIR/alacritty"
-
-
