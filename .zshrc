@@ -1,7 +1,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 export MANPAGER="nvim +Man!"
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="$(cat zsh_theme)"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
