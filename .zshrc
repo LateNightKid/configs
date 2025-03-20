@@ -41,6 +41,6 @@ alias dev=". ./setenv.sh"
 bindkey -v
 bindkey '^R' history-incremental-search-backward
 
-if test -f zsh_override.sh; then
-    source zsh_override.sh
+if test -f "${SYNCED_DIR}/zsh_override.sh"; then
+    source  "${SYNCED_DIR}/zsh_override.sh"
 fi
