@@ -18,6 +18,7 @@ alias ta="tmux attach"
 alias tma="tmux attach -t"
 alias tl="tmux ls"
 alias tk="tmux kill-session -t"
+alias ts="${SYNCED_DIR}/scripts/start-tmux.sh"
 
 alias gs="git status"
 alias ga="git add"
