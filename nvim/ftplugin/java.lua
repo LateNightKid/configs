@@ -65,7 +65,7 @@ config.settings = {
     java = {
       project = {
         referencedLibraries = {
-          '/home/pashahacker/.java/algs4.jar',
+          '$HOME/.local/java/algs4.jar',
         },
       }
     }
